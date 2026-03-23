@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+## Description: Interactively update packages with npm-check-updates
+## Usage: update-interactive [flags] [args]
+## Example: "ddev update-interactive"
+## ExecRaw: true
+## HostWorkingDir: true
+## MutagenSync: true
+
+# If a $PNPM_DIRECTORY is set, run our PNPM commands in that directory
+if [ -n "$PNPM_DIRECTORY" ]; then
+  pnpx --dir "$PNPM_DIRECTORY" npm-check-updates -i -u "$@"
+else
+  pnpx npm-check-updates -i -u "$@"
+fi
