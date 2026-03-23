@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Crucible - Forge Your Ideas",
+  title: "Hookd",
   description: "A refined platform for creating, testing, and iterating on your projects.",
 };
 
