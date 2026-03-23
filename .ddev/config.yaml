@@ -1,4 +1,4 @@
-name: crucible
+name: hookd
 type: generic
 docroot: ""
 php_version: "8.4"
